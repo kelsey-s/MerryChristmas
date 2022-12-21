@@ -46,6 +46,8 @@ body{
     animation: stroke 1s calc((var(--delay)*0.95)*0.02s) backwards;
 }
 .wish{
+    stroke:#f5e0a3;
+    stroke-dasharray: 1000 1000;
     position:absolute;
     left:50%;
     transform: translate(-35%,20%);
@@ -53,7 +55,6 @@ body{
     height:300px;
     color:#faebd7;
     font-size: 20px;
-
 }
 
 @keyframes appear {
