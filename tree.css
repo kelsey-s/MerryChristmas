@@ -14,8 +14,8 @@ body{
 }
 .tree{
     /* border:1px solid red; */
-    width:200px;
-    height: 300px;
+    width:1200px;
+    height: 1000px;
     position:relative;
     transform-style: preserve-3d;
     animation:spin 1s linear infinite
@@ -23,21 +23,21 @@ body{
 .tree-light{
     transform-style: preserve-3d;
     position:absolute;
-    width: 6px;
-    height:6px;
+    width: 8px;
+    height:8px;
     border-radius:50%;
     left:50%;
     bottom:calc(var(--y)*1%);
     transform: translate(-50%,50%) rotateY(calc(var(--rotate,0)*1deg)) 
-    translate3d(0,0,calc(var(--radius,0)*8px));
+    translate3d(0,0,calc(var(--radius,0)*25px));
     animation: flash calc(var(--speed) * 0.5s) calc(var(--delay)*0.5s) infinite, appear 0.5s calc(var(--appear)*0.05s);
 
 }
 .tree-star{
     stroke:#f5e0a3;
     stroke-dasharray: 1000 1000;
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     filter:drop-shadow(0 0 10px #fcf1cf);
     position: absolute;
     left:50%;
@@ -50,11 +50,13 @@ body{
     stroke-dasharray: 1000 1000;
     position:absolute;
     left:50%;
-    transform: translate(-35%,20%);
-    width:200px;
+    transform: translate(-20%,20%);
+    width:1000px;
     height:300px;
+    justify-content:center;
+    align-items: center;
     color:#faebd7;
-    font-size: 20px;
+    font-size: 50px;
 
 }
 
